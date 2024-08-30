@@ -28,6 +28,10 @@ function navigateAndToggle(id) {
 function navigateToDashboard() {
     router.push('/');
 }
+
+function navigateToLogin() {
+    router.push('/login'); // Remplace '/login' par la route de ta page de connexion
+}
 </script>
 
 <template>
@@ -77,7 +81,7 @@ function navigateToDashboard() {
                             <a @click="navigateAndToggle('#pricing')" class="flex m-0 md:ml-8 px-0 py-4 text-surface-900 dark:text-surface-0 font-medium leading-normal">
                                 <span>Pricing</span>
                             </a>
-                        </li>
+                        </li> 
                         <li>
                             <a @click="navigateAndToggle('#features')" class="flex m-0 md:ml-8 px-0 py-4 text-surface-900 dark:text-surface-0 font-medium leading-normal">
                                 <span>Features</span>
@@ -85,7 +89,7 @@ function navigateToDashboard() {
                         </li>
 
                         <li>
-                            <Button type="button" label="Buy Now" class="m-0 mt-4 md:mt-0 md:ml-8"></Button>
+                            <Button type="button" label="Connexion" @click="navigateToLogin" class="m-0 mt-4 md:mt-0 md:ml-8"></Button>
                         </li>
                     </ul>
                 </div>
@@ -93,23 +97,23 @@ function navigateToDashboard() {
             <div class="py-6 px-6 mx-0 md:mx-12 lg:mx-20 lg:px-20 z-20">
                 <div id="home" class="grid grid-cols-12 gap-4 grid-nogutter justify-between items-center mb-12 py-12 md:mb-20 md:py-20">
                     <div class="col-span-12 md:col-span-4 flex flex-col gap-6 order-1 md:order-none items-center md:items-start text-center md:text-left">
-                        <span class="block text-surface-900 dark:text-surface-0 font-bold text-4xl">Modern, stylish and clean</span>
-                        <span class="block text-surface-700 dark:text-surface-100 text-lg">The ultimate collection of design-agnostic, flexible and accessible UI Components.</span>
+                        <span class="block text-surface-900 dark:text-surface-0 font-bold text-4xl">Transfert d'argent vers la Guinée</span>
+                        <span class="block text-surface-700 dark:text-surface-100 text-lg">  Nous contacter au +224 666 17 70 06 </span>
                         <ul class="flex flex-wrap gap-8 list-none p-0">
                             <li class="flex items-center">
                                 <div class="p-1 rounded-full bg-green-400 inline-block mr-2"></div>
-                                <span class="text-surface-900 dark:text-surface-0 font-semibold">Javascript</span>
+                                <span class="text-surface-900 dark:text-surface-0 font-semibold">Saisir montant</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="p-1 rounded-full bg-green-400 inline-block mr-2"></div>
-                                <span class="text-surface-900 dark:text-surface-0 font-semibold">TypeScript</span>
+                                <span class="text-surface-900 dark:text-surface-0 font-semibold">Choix du destinataire</span>
                             </li>
                             <li class="flex items-center">
                                 <div class="p-1 rounded-full bg-green-400 inline-block mr-2"></div>
-                                <span class="text-surface-900 dark:text-surface-0 font-semibold">Vue</span>
+                                <span class="text-surface-900 dark:text-surface-0 font-semibold">Payer</span>
                             </li>
                         </ul>
-                        <Button type="button" label="Live Preview" icon="pi pi-arrow-right" iconPos="right" class="w-48" outlined></Button>
+                        <Button type="button" label="Effectuer 1 transfert" icon="pi pi-arrow-right" iconPos="right" class="w-88" outlined></Button>
                     </div>
 
                     <div class="col-span-12 md:col-span-7 order-none md:order-1 mb-12 md:mb-0 rounded">

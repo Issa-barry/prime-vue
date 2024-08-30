@@ -13,9 +13,9 @@
     <div class="px-8 min-h-screen flex justify-center items-center">
         <div class="z-10 text-center">
             <div class="text-surface-900 dark:text-surface-0 font-bold text-8xl mb-6">Oops!</div>
-            <p class="leading-normal mt-0 mb-8 text-surface-700 dark:text-surface-100 text-xl font-medium">There is nothing here</p>
+            <p class="leading-normal mt-0 mb-8 text-surface-700 dark:text-surface-100 text-xl font-medium">Cette page n'existe pas !!</p>
             <router-link to="/">
-                <Button type="button" class="font-medium cursor-pointer" raised severity="warn">Go to Dashboard</Button>
+                <Button type="button" class="font-medium cursor-pointer" raised severity="warn">Retour sur dspay.com</Button>
             </router-link>
         </div>
     </div>

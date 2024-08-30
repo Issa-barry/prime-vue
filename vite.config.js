@@ -25,17 +25,18 @@ export default defineConfig({
             resolvers: [PrimeVueResolver()]
         }),
     ],
-    resolve: {
-        alias: {
-            '@': resolve(__dirname, 'resources/js')
-        },
-    },
+    // resolve: {
+    //     alias: {
+    //         '@': resolve(__dirname, 'resources/js')
+    //     },
+    // },
     server: {
         watch: {
             usePolling: true,
         },
         hmr: {
-            host: 'localhost',
+            // host: 'localhost',
+            overlay: false,
         },
     },
 });

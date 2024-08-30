@@ -18,3 +18,7 @@ Route::get('/', function () {
 // });
 
 Route::get('/{any}', function () {  return Inertia::render('App');})->where('any', '.*');
+
+ Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified',])->group(function () {
+    Route::get('/{any}', function () {  return Inertia::render('App');})->where('any', '.*');
+});

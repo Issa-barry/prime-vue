@@ -1,5 +1,7 @@
 import './bootstrap';
 import '../css/app.css';
+// import './assets/styles.scss';
+// import './assets/tailwind.css';
 
 import './main.js';
 
@@ -19,7 +21,12 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
-            .use(PrimeVue)
+            .use(PrimeVue, {
+                unstyled: false,
+                theme: {
+                    preset: Aura
+                }
+            })
             .mount(el);
     },
     progress: {

@@ -22,7 +22,7 @@ function navigateToDashboard() {
         <div class="z-10 text-center">
             <div class="text-surface-900 dark:text-surface-0 font-bold text-8xl mb-6">ERROR</div>
             <p class="leading-normal mt-0 mb-8 text-surface-700 dark:text-surface-100 text-xl font-medium">Something went wrong!</p>
-            <Button class="font-medium" severity="danger" raised @click="navigateToDashboard"> Go to Dashboard </Button>
+            <Button class="font-medium" severity="danger" raised @click="navigateToDashboard"> Retour sur DSPAY.COM  </Button>
         </div>
     </div>
 </template>

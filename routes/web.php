@@ -20,4 +20,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () { return Inertia::render('Dashboard'); })->name('dashboard');
 });
-Route::get('/p1', function () { return Inertia::render('views/dashboards/Banking'); })->name('dashboard');
+ 
+Route::fallback(function () {
+    return Inertia::render('views/pages/NotFound', [], 404);
+});

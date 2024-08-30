@@ -1,6 +1,6 @@
 <script setup>
-import AppConfig from '@/layout/AppConfig.vue';
-import { useLayout } from '@/layout/composables/layout';
+import AppConfig from '@/Layouts/AppConfig.vue';
+import { useLayout } from '@/Layouts/composables/layout';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
